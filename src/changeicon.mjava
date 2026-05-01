@@ -1,0 +1,15 @@
+import android.app.admin.SystemUpdateInfo;
+import android.content.ComponentName;
+import android.content.pm.PackageManager;
+
+public static void choose(int n) {
+	if(activity.getPackageName().equals("com.iapp.app")) {
+		tw("请打包运行！");
+	}
+	else {
+		for (int i = 0; i <= 5; i++) {
+			activity.getPackageManager().setComponentEnabledSetting(new ComponentName(activity, "awzx.dynamic.switching.icon.Alias" + i), 2, 1);
+		}
+		activity.getPackageManager().setComponentEnabledSetting(new ComponentName(activity, "awzx.dynamic.switching.icon.Alias" + n), 1, 1);
+	}
+}

@@ -1,0 +1,37 @@
+<View id="1" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=0</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",0)</eventItme></event>
+</View>
+<View id="2" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=1</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",1)</eventItme></event>
+</View>
+<View id="3" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=2</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",2)</eventItme></event>
+</View>
+<View id="4" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=3</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",3)</eventItme></event>
+</View>
+<View id="5" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=4</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",4)</eventItme></event>
+</View>
+<View id="6" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=5</ppt>
+<event><eventItme type="clicki">call(null,"mjava","changeicon.choose",5)</eventItme></event>
+</View>
+<UIEventset></UIEventset>

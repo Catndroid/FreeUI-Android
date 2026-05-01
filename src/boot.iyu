@@ -1,0 +1,32 @@
+<View id="2" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=black
+padding=20dp</ppt>
+<event></event>
+</View>
+<View id="1" did="2" type="WebView">
+<ppt>width=-1
+height=-1
+url=@main.html</ppt>
+<event><eventItme type="onreceivederror">us(1,"url","@main.html")</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">java(window,activity,"android.app.Activity.getWindow")
+java(attribute,window,"android.view.Window.getAttributes")
+javass(null,attribute,"android.view.WindowManager$LayoutParams","layoutInDisplayCutoutMode",3)
+java(null,window,"android.view.Window.setAttributes","android.view.WindowManager$LayoutParams",attribute)
+java(get,window,"android.view.Window.getDecorView")
+java(null,get,"android.view.View.setSystemUiVisibility","int",-1)
+java(null,window,"android.view.Window.setSoftInputMode","int",16)
+
+ushsp(false)
+
+gvs(1, 浏览器对象)
+java(浏览器属性, 浏览器对象, "android.webkit.WebView.getSettings")
+java(null, 浏览器属性, "android.webkit.WebSettings.setBuiltInZoomControls","boolean", false)
+
+f(sss.thickness == "1")
+{
+	us(2,"background","#FFD800")
+}</eventItme></UIEventset>

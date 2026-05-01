@@ -1,0 +1,27 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#410002</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+padding=25dp
+BackgroundColor=#410002</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=Cat1239920\nFollow Me? Could!!!
+textColor=#BA1A1A
+shadowRadius=100
+textSize=65dp
+typeface=@fonts/Product-Sans/Product-Sans-Regular.ttf</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

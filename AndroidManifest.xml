@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>FreeUI</title>
+<icon>icon.png</icon>
+<packageName>com.shxUwU.freeui.github</packageName>
+<versionName>2.41.2.23</versionName>
+<versionint>17</versionint>
+<sdk>26</sdk>
+<yuv>3</yuv>
+
+<remark></remark>
+<Permissions>android.permission.INTERNET
+android.permission.READ_EXTERNAL_STORAGE</Permissions>
+<createTime>2025-02-17 22:27:56</createTime>
+<upTime>2025-02-17 22:27:56</upTime><manifest></manifest><application></application>

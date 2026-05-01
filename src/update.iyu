@@ -1,0 +1,128 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#F7F7F7
+//background=@hiui/js.webp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+paddingTop=50dp
+paddingLeft=20dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@hiui/iK1.png</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=250dp
+orientation=vertical
+padding=20dp
+paddingBottom=0dp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=@hiui/freeui-noshadow.png</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=new-version
+layout_marginTop=30dp
+textColor=#60000000
+textStyle=bold
+textSize=15dp
+typeface=@misans/Mitype2018-70.otf</ppt>
+<event></event>
+</View>
+<View id="11" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+padding=20dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#10000000
+gravity=center</ppt>
+<event><eventItme type="clicki">sss browserurl = "https://freeui.mysxl.cn/"
+uigo("browser.iyu")</eventItme></event>
+</View>
+<View id="17" did="13" type="TextView">
+<ppt>width=-2
+height=-1
+text=打开FreeUI官网
+textColor=#000000
+textSize=18dp
+gravity=center
+//shadowColor=#55000000
+//shadowRadius=10
+textStyle=bold
+typeface=@misans/MiSans-Demibold.ttf</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#3482FF
+gravity=center</ppt>
+<event><eventItme type="clicki">sit(a,"action","android.intent.action.VIEW")
+sit(a,"data","mqqapi://card/show_pslcard?scr_type=internal&version=1&uin=1054405173&card_type=group&source=qrcode")
+uit(a,"chooser","1054405173")</eventItme></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-2
+height=-1
+text=在社区群下载更新
+textColor=#FFFFFF
+textSize=18dp
+gravity=center
+//shadowColor=#55000000
+//shadowRadius=10
+textStyle=bold
+typeface=@misans/MiSans-Demibold.ttf</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl(true)
+java(window,activity,"android.app.Activity.getWindow")
+java(attribute,window,"android.view.Window.getAttributes")
+javass(null,attribute,"android.view.WindowManager$LayoutParams","layoutInDisplayCutoutMode",3)
+java(null,window,"android.view.Window.setAttributes","android.view.WindowManager$LayoutParams",attribute)
+java(get,window,"android.view.Window.getDecorView")
+java(null,get,"android.view.View.setSystemUiVisibility","int",-1)
+java(null,window,"android.view.Window.setSoftInputMode","int",16)
+
+ushsp(false)
+
+us(6,"text","更新至 " + sss.vercheck)</eventItme></UIEventset>

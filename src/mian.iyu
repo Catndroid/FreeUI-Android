@@ -1,0 +1,330 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#ffffff
+//background=@hiui/device_lite_bg_land.webp
+background=@hiui/js.webp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+paddingTop=50dp
+paddingLeft=20dp
+paddingRight=20dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@hiui/iK1.png</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="18" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@hiui/more.png</ppt>
+<event><eventItme type="clicki">sl("检查更新.源代码许可.关于",".",list)
+//设置菜单列表
+
+gvs(20,tv)
+//绑定监听文本
+
+javanew(pop,ss.class,"android.view.View",st_vW,"String[]",list,"String[]",list,"android.widget.TextView",tv)
+javax(null,pop,ss.class,"show")</eventItme></event>
+</View>
+<View id="20" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=选项
+visibility=gone</ppt>
+<event><eventItme type="aftertextchanged">f(st_sS=="检查更新")
+{
+	//检查更新
+	//shxUwU的微云
+	t()
+	{
+		hs("https://sharechain.qq.com/30af971091684d84a4b949ca0f87247f?qq_aio_chat_type=2",upinfo)
+		sj(upinfo,"FreeUI:",";",sss.vercheck)
+		syso(sss.vercheck)
+		ufnsui()
+		{
+			f(sss.vercheck == "null")
+			{
+				sss echotag = "检测更新失败，请检查网络"
+				fn toast-let.echotag(sss.echotag)
+			}
+			else f(sss.vercheck == sss.freeuiversion)
+			{
+				sss echotag = "已是最新版本"
+				fn toast-let.echotag(sss.echotag)
+			}
+			else
+			{
+				sss echotag = "有新版可更新: " + sss.vercheck
+				fn toast-let.echotag(sss.echotag)
+				us(7,"visibility","visible")
+				uigo("update.iyu")
+				//us(31,"text","有新版可更新: " + sss.vercheck)
+				//us(12,"visibility","gone")
+			}
+		}
+	}
+	
+}
+else f(st_sS=="源代码许可")
+{
+	sss browserurl = "@readme.html"
+	uigo("browser2.iyu")
+}
+else f(st_sS=="关于")
+{
+	s osimage = null
+	s abouttitle = "关于 FreeUI"
+	s aboutarea = "Android 制作: Cat1239920\nFreeUI 制作: shxUwU"
+	s aboutbuton = "好的"
+	utw(osimage, abouttitle, aboutarea, aboutbuton, false, v)
+	{
+		
+	}
+}
+else f(st_sS=="选择图标")
+{
+	uigo("chooseicon.iyu")
+}
+else f(st_sS=="游戏加速")
+{
+	uigo("GameAddit.iyu")
+}
+//检查更新.源代码许可.关于"</eventItme></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=250dp
+orientation=vertical
+padding=20dp
+paddingBottom=0dp
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=-1
+height=80dp
+//src=@hiui/freeui.png
+src=@hiui/freeui-noshadow.png</ppt>
+<event><eventItme type="press">ssj(19, "clicki")
+{
+sl("检查更新.源代码许可.关于.游戏加速.选择图标",".",list)
+//设置菜单列表
+
+gvs(20,tv)
+//绑定监听文本
+
+javanew(pop,ss.class,"android.view.View",st_vW,"String[]",list,"String[]",list,"android.widget.TextView",tv)
+javax(null,pop,ss.class,"show")
+}</eventItme></event>
+</View>
+<View id="6" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=apk-version
+layout_marginTop=30dp
+textColor=#60000000
+textStyle=bold
+textSize=15dp
+typeface=@misans/Mitype2018-70.otf</ppt>
+<event></event>
+</View>
+<View id="7" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=35dp
+paddingLeft=20dp
+paddingRight=20dp
+gravity=center
+visibility=gone</ppt>
+<event><eventItme type="clicki">uigo("update.iyu")</eventItme></event>
+</View>
+<View id="8" did="7" type="CardView">
+<ppt>width=250dp
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp
+app_CardBackgroundColor=#99ffffff
+</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="TextView">
+<ppt>width=-2
+height=-1
+text=有新版本
+textColor=#000000
+textSize=17dp
+gravity=center
+//shadowColor=#55000000
+//shadowRadius=10
+textStyle=bold
+typeface=@misans/MiSans-Demibold.ttf</ppt>
+<event></event>
+</View>
+<View id="11" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom
+padding=20dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#3482FF
+gravity=center</ppt>
+<event><eventItme type="clicki">sit(a,"action","android.intent.action.VIEW")
+sit(a,"data","mqqapi://card/show_pslcard?scr_type=internal&version=1&uin=1054405173&card_type=group&source=qrcode")
+uit(a,"chooser","1054405173")</eventItme></event>
+</View>
+<View id="17" did="13" type="TextView">
+<ppt>width=-2
+height=-1
+text=加入社区群
+textColor=#FFFFFF
+textSize=18dp
+gravity=center
+//shadowColor=#55000000
+//shadowRadius=10
+textStyle=bold
+typeface=@misans/MiSans-Demibold.ttf</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp
+app_CardBackgroundColor=#99FFFFFF</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event><eventItme type="clicki">uigo("boot.iyu")</eventItme></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-2
+height=-1
+text=进入FreeUI
+textColor=#000000
+textSize=18dp
+gravity=center
+//shadowColor=#55000000
+//shadowRadius=10
+textStyle=bold
+typeface=@misans/MiSans-Demibold.ttf</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl(false)
+java(window,activity,"android.app.Activity.getWindow")
+java(attribute,window,"android.view.Window.getAttributes")
+javass(null,attribute,"android.view.WindowManager$LayoutParams","layoutInDisplayCutoutMode",3)
+java(null,window,"android.view.Window.setAttributes","android.view.WindowManager$LayoutParams",attribute)
+java(get,window,"android.view.Window.getDecorView")
+java(null,get,"android.view.View.setSystemUiVisibility","int",-1)
+java(null,window,"android.view.Window.setSoftInputMode","int",16)
+
+loadjar("tool.dex",dex)
+cls(dex,"com.FreeMobile.PopupMenu",ss.class)
+
+fr("@config.ini",sss.freeuiversion)
+fr("@type.ini",sss.freeuitype)
+us(6,"text",sss.freeuiversion + " " + sss.freeuitype)
+
+ushsp(false)
+
+//检查更新
+//shxUwU的微云
+t()
+{
+	hs("https://sharechain.qq.com/30af971091684d84a4b949ca0f87247f?qq_aio_chat_type=2",upinfo)
+	sj(upinfo,"FreeUI:",";",sss.vercheck)
+	syso(sss.vercheck)
+	ufnsui()
+	{
+		f(sss.vercheck == "null")
+		{
+			sss echotag = "检测更新失败，请检查网络"
+			fn toast-let.echotag(sss.echotag)
+		}
+		else f(sss.vercheck == sss.freeuiversion)
+		{
+			//sss echotag = "已是最新版本"
+			//fn toast-let.echotag(sss.echotag)
+		}
+		else
+		{
+			//tw("有新版可更新: " + sss.vercheck)
+			us(7,"visibility","visible")
+			//us(31,"text","有新版可更新: " + sss.vercheck)
+			//us(12,"visibility","gone")
+		}
+	}
+}
+
+t()
+{
+	javax(p, activity, "android.content.Context", "getPackageName")
+	javax(m, activity, "android.content.Context", "getPackageManager")
+	javax(i, m, "android.content.pm.PackageManager", "getPackageInfo", "String", p, "int", 0)
+	javags(v, i, "android.content.pm.PackageInfo", "versionCode")
+	//v 是 versionCode
+	
+	hs("https://sharechain.qq.com/773696c7c0785222a5798b6a8870b065?qq_aio_chat_type=3",upinfo)
+	sj(upinfo,"FreeUIding:",";",sss.dingcheck)
+	syso("1" + sss.dingcheck)
+	ufnsui()
+	{
+		f(sss.dingcheck == "null")
+		{
+			syso("Not Found Ding")
+		}
+		else f(sss.dingcheck == v)
+		{
+			syso("Best Ding")
+		}
+		else f(sss.dingcheck &gt; v)
+		{
+			sss echotag = "有补丁可安装"
+			fn toast-let.echotag(sss.echotag)
+            uigo("DingUpdate.iyu")
+		}
+	}
+}</eventItme></UIEventset>

@@ -1,0 +1,190 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#F7F7F7</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+paddingTop=50dp
+paddingLeft=20dp
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@hiui/iK1.png</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=图标样式
+textSize=30dp
+textColor=#000000
+paddingTop=15dp
+paddingLeft=25dp
+paddingBottom=10dp
+typeface=@misans/Mitype2018-70.otf</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+padding=20dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="CardView">
+<ppt>width=-1
+height=350dp
+app_CardcornerRadius=25dp
+elevation=0dp
+app_CardBackgroundColor=#eeeeee
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@res/bee54a61-8c87-4d81-aa86-9c2422c89d2d.mrc.png
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="12" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="CardView">
+<ppt>width=200dp
+height=70dp
+app_CardcornerRadius=20dp
+elevation=90dp
+background=through</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="ImageView">
+<ppt>width=-1
+height=-1
+//src=@icons/icon4.png
+src=@hiui/freeui-covert-noshadow.png
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="9" did="6" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=20dp
+elevation=0dp
+app_CardBackgroundColor=#ffffff
+layout_marginBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=图标风格
+typeface=@misans/MiSans-Demibold.ttf
+textSize=15dp
+textColor=#000000
+layout_marginLeft=20dp
+layout_marginTop=20dp
+layout_marginBottom=20dp</ppt>
+<event></event>
+</View>
+<View id="15" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center_vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="15" type="LinearLayout">
+<ppt>width=150dp
+height=-1
+orientation=horizontal
+gravity=right|center_vertical</ppt>
+<event><eventItme type="clicki">sl("默认.George Stoyanov.Texture",".",list)
+//设置菜单列表
+
+gvs(16,tv)
+//绑定监听文本
+
+javanew(pop,ss.class,"android.view.View",st_vW,"String[]",list,"String[]",list,"android.widget.TextView",tv)
+javax(null,pop,ss.class,"show")</eventItme></event>
+</View>
+<View id="16" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=选择
+//typeface=@misans/MiSans-Demibold.ttf
+typeface=@misans/Mitype2018-70.otf
+textSize=15dp
+//textColor=#eeeeee
+layout_marginRight=20dp
+layout_marginTop=20dp
+layout_marginBottom=20dp</ppt>
+<event><eventItme type="aftertextchanged">f(st_sS=="默认")
+{
+	call(null,"mjava","changeicon.choose",0)
+}
+else f(st_sS=="George Stoyanov")
+{
+	call(null,"mjava","changeicon.choose",2)
+}
+else f(st_sS=="Texture")
+{
+	call(null,"mjava","changeicon.choose",4)
+}
+//默认.George Stoyanov.Texture</eventItme></event>
+</View>
+<View id="18" did="6" type="TextView">
+<ppt>width=-1
+height=-2
+text=Desktop Icon EChange 功能仅适配 Android 8 或更新。
+textColor=#666666
+textSize=13dp
+gravity=left
+//shadowColor=#55000000
+//shadowRadius=10
+//typeface=@misans/Mitype2018-70.otf</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl(true)
+java(window,activity,"android.app.Activity.getWindow")
+java(attribute,window,"android.view.Window.getAttributes")
+javass(null,attribute,"android.view.WindowManager$LayoutParams","layoutInDisplayCutoutMode",3)
+java(null,window,"android.view.Window.setAttributes","android.view.WindowManager$LayoutParams",attribute)
+java(get,window,"android.view.Window.getDecorView")
+java(null,get,"android.view.View.setSystemUiVisibility","int",-1)
+java(null,window,"android.view.Window.setSoftInputMode","int",16)
+gvs(4, 浏览器对象)
+java(浏览器属性, 浏览器对象, "android.webkit.WebView.getSettings")
+java(null, 浏览器属性, "android.webkit.WebSettings.setBuiltInZoomControls","boolean", false)
+
+ushsp(false)
+
+loadjar("tool.dex",dex)
+cls(dex,"com.FreeMobile.PopupMenu",ss.class)
+
+us(4,"url",sss.browserurl)</eventItme></UIEventset>

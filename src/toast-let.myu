@@ -1,0 +1,12 @@
+fn echotag(sss.echotag)
+
+nvw(id, 1,"线性布局","",v)
+//生成一个线性布局
+addv(v,"toast-layout.iyu")
+us(toast-layout.2,"text",sss.echotag)
+//把iyu,addv到里面
+urvw(v)
+
+call(null,"mjava","toast.tw","下","短",v)
+
+end fn
